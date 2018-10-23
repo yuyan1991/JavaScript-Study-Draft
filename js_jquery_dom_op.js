@@ -19,3 +19,7 @@
 var div = $('#test-highlight-css');
 var js = $('#test-highlight-css>ul>li.js').css('color', '#dd1144').css('background-color', '#ffd351');
 // var js = $('#test-highlight-css>ul>li.js').addClass('highlight');
+
+// var div = $('#test-highlight-css');
+// div.find('.js').addClass('highlight');
+// div.find('.js').css('color', '#ff0000').css('backgroundColor', '#000000');

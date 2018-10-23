@@ -20,6 +20,26 @@ js.after(lua);
 lua.after(pascal);
 $('#test-div>ul>li:last-child').before(ruby);
 
+// var js = $('#test-div>ul>li:first-child');
+// var lua = '<li><span>Lua</span></li>'
+// js.after(lua);
+// lua = js.next();
+// lua.after('<li><span>Pascal</span></li>');
+// var python = $('#test-div>ul>li:nth-child(4)');
+// python.after('<li><span>Ruby</span></li>');
+
+/*
+var arr = ['Pascal', 'Lua', 'Ruby'];
+$('#test-div>ul>li').map(function () {
+	return arr.push($(this).text());
+});
+arr.sort();
+$('#test-div>ul').empty();
+for (let i = 0; i < arr.length; i++) {
+	$('#test-div>ul').append('<li><span>' + arr[i] + '</span></li>');
+}
+*/
+
 // 测试:
 ; (function () {
 	var s = $('#test-div>ul>li').map(function () {

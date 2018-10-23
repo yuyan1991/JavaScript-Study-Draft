@@ -23,6 +23,17 @@ var city = $('#test-form input[name=city]').val();
 
 json = JSON.stringify({"name": name, "email": email, "password": password, "gender": gender, "city": city});
 
+/*
+var obj = {};
+$('#test-form input,select').each(function () {
+	if (this.type === "radio") {
+		return this.checked ? (obj[this.name] = this.value) : "";
+	} else return obj[this.name] = this.value;
+}
+);
+json = JSON.stringify(obj);
+*/
+
 // 显示结果:
 if (typeof (json) === 'string') {
 	console.log(json);
